@@ -1,0 +1,13 @@
+
+.ponente{
+    @apply border-8 border-verde-texto w-[90%] lg:w-[40%] 3xl:w-[25%] p-4 shadow rounded-3xl text-center mx-auto;
+}
+.ponente__datos{
+    @apply  w-[80%] lg:w-[80%] mx-auto text-sm lg:text-4xl px-2 ;
+}
+.ponente__foto{
+    @apply mx-auto block w-[40%] lg:w-[35%] rounded-full sm:shrink-0 my-8;
+}
+.ponente__nombre{
+    @apply text-2xl mx-auto text-center md:text-5xl font-bold mb-4  md:my-8;
+} 
