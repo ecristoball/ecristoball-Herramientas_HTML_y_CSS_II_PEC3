@@ -8,6 +8,7 @@ module.exports = {
         'beis-fondo': '#f8ffe5',
         'verde-fondo':'#359c48',
         'blanco-texto': '#ffffff',
+        'input-bg-oklch': 'oklch(0.89 0.039 141.54)',
       },
       screens: {
         '3xl': '150rem', 
