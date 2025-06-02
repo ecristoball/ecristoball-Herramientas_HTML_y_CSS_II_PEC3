@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-white text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <div class="w-[90%] mx-auto">
+
+      <!-- HEADER -->
+      <header class="py-4">
+        <div class="flex justify-between items-center">
+          <h1 class="text-4xl font-bold my-16">Cooking contests 2024 edition</h1>
+          <nav>
+            <ul class="flex space-x-6 font-medium text-sm">
+              <li><a href="#" class="text-3xl mx-4 font-semibold hover:text-green-600">Home</a></li>
+              <li><a href="#" class="text-3xl mx-4 font-semibold hover:text-green-600">The contest</a></li>
+              <li><a href="#" class="text-3xl mx-4 font-semibold  hover:text-green-600">Recipies</a></li>
+              <li><a href="#" class="text-3xl p-4 mx-4 rounded-xl bg-black text-white font-semibold hover:text-green-600">Contestants</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main>
+        <section class="text-center py-12 px-4">
+          <h2 class="text-9xl font-bold my-16">Contestans</h2>
+          <p class="text-4xl font-semibold text-gray-500 mb-64">This section describes the recipies of the best contestants</p>
+          <img src="./assets/images/recipie.jpg" alt="Imagen principal" class="w-full object-cover rounded-md shadow" />
+        </section>
+
+        <section class="max-w-4xl  px-4 py-8">
+          <div>
+            <p class="text-6xl font-bold  mb-6">
+            The recipes.
+          </p>
+          <p class="text-4xl font-semibold text-gray-500 mb-6">
+            These are the recipes of the best contestants.
+          </p>
+          </div>
+        </section>
+
+        <!-- CARDS -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-md text-left">
+                <h3 class="font-semibold text-xl md:text-3xl mb-16 mt-8 text-left">Cajun seafood pasta</h3>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/images/ponente10.webp" 
+                    alt="Foto 1" class="w-20 h-20 rounded-full object-cover" />
+                    <div>
+                        <p class="text-2xl font-bold mb-2">
+                            John Cooper
+                        </p>
+                        <p class="text-xl font-semibold text-gray-600">
+                            This Cajun seafood pasta ercipe is a hot one, but delicious!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-md text-left">
+                <h3 class="font-semibold text-xl md:text-2xl mb-4 text-left">Cedar planked salmon</h3>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/images/ponente7.webp" alt="Foto 2" class="w-20 h-20 rounded-full object-cover" />
+                    <div>
+                        <p class="text-sm text-black mb-1">Marta Alonso</p>
+                        <p class="text-sm text-gray-600">
+                            Salmon reaches its full potential when it's grilled on top of cedar plank.
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-md text-left">
+                <h3 class="font-semibold text-xl md:text-2xl mb-4 text-left">Poulet au vinaigre</h3>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/images/ponente9.webp" alt="Foto 3" class="w-20 h-20 rounded-full object-cover" />
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Mary Ann Stones</p>
+                        
+                        <p class="text-sm text-gray-600 ">Irresistible chicken, cooked with vinegar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="py-16 my-16 border-t border-gray-300">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+          <!-- IZQUIERDA -->
+          <div class="w-full md:w-1/2">
+            <h4 class="text-4xl font-semibold mb-32">Cooking contest 2024 edition</h4>
+            <div class="flex space-x-4">
+              <a href="#"><img src="./assets/images/facebook.jpg" alt="Facebook" class="w-12"/></a>
+              <a href="#"><img src="./assets/images/instagram.jpg" alt="instagram" class="w-12"/></a>
+              <a href="#"><img src="./assets/images/linkedin.jpg" alt="linkedin" class="w-12" /></a>
+              <a href="#"><img src="./assets/images/youtube.jpg" alt="YouTube" class="w-12" /></a>
+            </div>
+          </div>
+
+          <!-- DERECHA -->
+          <!-- Parte derecha del footer -->
+            <div class="w-full md:w-1/2">
+            <div class="grid grid-cols-3 gap-8 text-sm">
+                <!-- Columna 1 -->
+                <div >
+                <h4 class="font-bold text-3xl my-4">Recipes</h4>
+                <ul class="space-y-1">
+                    <li><a href="#" class="table__content">Cajun seafood pasta</a></li>
+                    <li><a href="#" class="input__opcional">Cedar planked salmon</a></li>
+                    <li><a href="#" class="font-bold text-gray-500 text-2xl my-8 hover:underline">Poulet au vinaigre</a></li>
+                </ul>
+                </div>
+
+                <!-- Columna 2 -->
+                <div>
+                <h4 class="font-bold text-2xl mb-2">Constants</h4>
+                <ul class="space-y-1">
+                    <li><a href="#" class="hover:underline">John Cooper</a></li>
+                    <li><a href="#" class="hover:underline">Marta Alonso</a></li>
+                    <li><a href="#" class="hover:underline">Mary Ann Stones</a></li>
+                </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div>
+                <h4 class="font-bold text-2xl mb-2">Content editions</h4>
+                <ul class="space-y-1">
+                    <li><a href="#" class="hover:underline">2024</a></li>
+                    <li><a href="#" class="hover:underline">2023</a></li>
+                    <li><a href="#" class="hover:underline">2022</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
