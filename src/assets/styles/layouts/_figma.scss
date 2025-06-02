@@ -1,3 +1,21 @@
 .table__content{
-    @apply font-bold text-gray-500 text-2xl my-8;
+    @apply font-bold text-gray-500 text-xl my-8;
 }
+
+.card__content{
+    @apply bg-white rounded-xl p-6 border border-gray-200 shadow-md text-left
+}
+
+.card__titulo{
+    @apply font-semibold text-xl md:text-3xl mb-16 mt-6 text-left;
+}
+.card__imagen{
+    @apply w-20 h-20 rounded-full object-cover;
+}
+.card__autor{
+    @apply text-2xl font-bold mb-2;
+}
+.card__descripcion{
+    @apply text-xl font-semibold text-gray-600;
+}
+

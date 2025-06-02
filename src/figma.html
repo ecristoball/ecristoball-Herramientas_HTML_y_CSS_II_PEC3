@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" class="bg-white text-gray-800">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <title>Página Tailwind</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+   
   </head>
 
   <body class="bg-white text-gray-800">
@@ -16,9 +17,11 @@
           <h1 class="text-4xl font-bold my-16">Cooking contests 2024 edition</h1>
           <nav>
             <ul class="flex space-x-6 font-medium text-sm">
-              <li><a href="#" class="text-3xl mx-4 font-semibold hover:text-green-600">Home</a></li>
+              <li><a href="index.html" class="text-3xl mx-4 font-semibold hover:text-verde-texto">Home</a></li>
+              
+          </li>
               <li><a href="#" class="text-3xl mx-4 font-semibold hover:text-green-600">The contest</a></li>
-              <li><a href="#" class="text-3xl mx-4 font-semibold  hover:text-green-600">Recipies</a></li>
+              <li><a href="#" class="text-3xl mx-4 font-semibold hover:text-green-600">Recipies</a></li>
               <li><a href="#" class="text-3xl p-4 mx-4 rounded-xl bg-black text-white font-semibold hover:text-green-600">Contestants</a></li>
             </ul>
           </nav>
@@ -47,16 +50,16 @@
         <!-- CARDS -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12">
             <!-- Card 1 -->
-            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-md text-left">
-                <h3 class="font-semibold text-xl md:text-3xl mb-16 mt-8 text-left">Cajun seafood pasta</h3>
+            <div class="card__content">
+                <h3 class="card__titulo">Cajun seafood pasta</h3>
                 <div class="flex items-center gap-4">
                     <img src="./assets/images/ponente10.webp" 
                     alt="Foto 1" class="w-20 h-20 rounded-full object-cover" />
                     <div>
-                        <p class="text-2xl font-bold mb-2">
+                        <p class="card__autor">
                             John Cooper
                         </p>
-                        <p class="text-xl font-semibold text-gray-600">
+                        <p class="card__descripcion">
                             This Cajun seafood pasta ercipe is a hot one, but delicious!
                         </p>
                     </div>
@@ -64,13 +67,13 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-md text-left">
-                <h3 class="font-semibold text-xl md:text-2xl mb-4 text-left">Cedar planked salmon</h3>
+            <div class="card__content">
+                <h3 class="card__titulo">Cedar planked salmon</h3>
                 <div class="flex items-center gap-4">
                     <img src="./assets/images/ponente7.webp" alt="Foto 2" class="w-20 h-20 rounded-full object-cover" />
                     <div>
-                        <p class="text-sm text-black mb-1">Marta Alonso</p>
-                        <p class="text-sm text-gray-600">
+                        <p class="card__autor">Marta Alonso</p>
+                        <p class="card__descripcion">
                             Salmon reaches its full potential when it's grilled on top of cedar plank.
                         </p>
                     </div>
@@ -79,14 +82,14 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-md text-left">
-                <h3 class="font-semibold text-xl md:text-2xl mb-4 text-left">Poulet au vinaigre</h3>
+            <div class="card__content">
+                <h3 class="card__titulo">Poulet au vinaigre</h3>
                 <div class="flex items-center gap-4">
                     <img src="./assets/images/ponente9.webp" alt="Foto 3" class="w-20 h-20 rounded-full object-cover" />
                     <div>
-                        <p class="text-sm text-gray-600 mb-1">Mary Ann Stones</p>
+                        <p class="card__autor">Mary Ann Stones</p>
                         
-                        <p class="text-sm text-gray-600 ">Irresistible chicken, cooked with vinegar.
+                        <p class="card__descripcion">Irresistible chicken, cooked with vinegar.
                         </p>
                     </div>
                 </div>
@@ -115,31 +118,31 @@
             <div class="grid grid-cols-3 gap-8 text-sm">
                 <!-- Columna 1 -->
                 <div >
-                <h4 class="font-bold text-3xl my-4">Recipes</h4>
+                <h4 class="font-bold text-2xl my-4">Recipes</h4>
                 <ul class="space-y-1">
                     <li><a href="#" class="table__content">Cajun seafood pasta</a></li>
-                    <li><a href="#" class="input__opcional">Cedar planked salmon</a></li>
-                    <li><a href="#" class="font-bold text-gray-500 text-2xl my-8 hover:underline">Poulet au vinaigre</a></li>
+                    <li><a href="#" class="table__content">Cedar planked salmon</a></li>
+                    <li><a href="#" class="table__content">Poulet au vinaigre</a></li>
                 </ul>
                 </div>
 
                 <!-- Columna 2 -->
                 <div>
-                <h4 class="font-bold text-2xl mb-2">Constants</h4>
+                <h4 class="font-bold text-2xl my-4">Constants</h4>
                 <ul class="space-y-1">
-                    <li><a href="#" class="hover:underline">John Cooper</a></li>
-                    <li><a href="#" class="hover:underline">Marta Alonso</a></li>
-                    <li><a href="#" class="hover:underline">Mary Ann Stones</a></li>
+                    <li><a href="#" class="table__content">John Cooper</a></li>
+                    <li><a href="#" class="table__content">Marta Alonso</a></li>
+                    <li><a href="#" class="table__content">Mary Ann Stones</a></li>
                 </ul>
                 </div>
 
                 <!-- Columna 3 -->
                 <div>
-                <h4 class="font-bold text-2xl mb-2">Content editions</h4>
+                <h4 class="font-bold text-2xl my-4">Content editions</h4>
                 <ul class="space-y-1">
-                    <li><a href="#" class="hover:underline">2024</a></li>
-                    <li><a href="#" class="hover:underline">2023</a></li>
-                    <li><a href="#" class="hover:underline">2022</a></li>
+                    <li><a href="#" class="table__content">2024</a></li>
+                    <li><a href="#" class="table__content">2023</a></li>
+                    <li><a href="#" class="table__content">2022</a></li>
                 </ul>
                 </div>
             </div>
