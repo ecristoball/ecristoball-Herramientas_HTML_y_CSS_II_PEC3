@@ -12,7 +12,9 @@
   <body class="p-0">
     <include src="./views/header.html"></include> 
 
+
     <main class="bg-beis-fondo text-verde-texto">
+       
      <!-- 
       <nav aria-label="ubicacion breadcrumb ">
         <ol class="ubicacion__listado breadcrumb fs-6 fs-md-4 mt-4">
@@ -30,7 +32,14 @@
     -->
       <h1 class="text-3xl md:text-6xl mx-auto py-8 my-4 text-center font-medium">PONENTES</h1>
       <div class="flex flex-wrap gap-16 w-[90%] mx-auto py-8 my-4">
-      
+        <include src="./views/ponente.html" locals='{
+          "imagen":"./assets/images/ponente1.webp",
+          "nombre": "María González Mayor",
+          "cargo":"Directora General de Estrategia Digital en la Agencia Digital de Andalucía. Junta de Andalucía.",
+          "ponencia":"Estrategia Digital en Economía Circular",
+          "fecha":"6 de noviembre 9:30 a 13:00",
+          "sala":"Sala 3"
+        }'></include> 
         <div class="ponente ">
           <img
             src="./assets/images/ponente1.webp"
@@ -50,7 +59,14 @@
           </div>
           
         </div>
-
+<include src="./views/ponente.html" locals='{
+          "imagen":"./assets/images/ponente2.webp",
+          "nombre": "Mikel López Quintana",
+          "cargo":" Analista de políticas en la Unidad de Gobernanza del Agua, Economía Azul y Circular, dentro de la División de Ciudades y Desarrollo Sostenible de la Organización para la Cooperación y el Desarrollo Económicos (OCDE).",
+          "ponencia":"Economia Azul y Circular",
+          "fecha":"6 de noviembre 9:30 a 13:00",
+          "sala":"Sala 1"
+        }'></include> 
         <div class="ponente">
           <img
             src="./assets/images/ponente2.webp"
@@ -71,7 +87,14 @@
             <p class="md:text-4xl">Sala 1</p>
           </div>
         </div>
-
+<include src="./views/ponente.html" locals='{
+          "imagen":"./assets/images/ponente9.webp",
+          "nombre": "Miguel Santana Almanzor",
+          "cargo":"Responsable de Capital Natural y Economía Circular - Departamento de Territorio, Vivienda y Transición Ecológica - Generalitat denCatalunya.",
+          "ponencia":"Economía Circular en Vivienda",
+          "fecha":"6 de noviembre 15:00 a 17:00",
+          "sala":"Sala 3"
+        }'></include> 
         <div class="ponente container-type inline-size">
           <img
             src="./assets/images/ponente9.webp"
@@ -99,7 +122,14 @@
             </div>
           </div>
         </div>
-
+<include src="./views/ponente.html" locals='{
+          "imagen":"./assets/images/ponente6.webp",
+          "nombre": "Jesús Martinez Del Castillo",
+          "cargo":"Viceconsejero de Medio Ambiente del Departamento de Industria, Transición Energética y Sostenibilidad. Gobierno Vasco.",
+          "ponencia":"Economía Circular y Sostenibilidad",
+          "fecha":"6 de noviembre 15:00 a 17:00",
+          "sala":"Sala 1"
+        }'></include> 
         <div class="ponente">
           <img
             src="./assets/images/ponente6.webp"
@@ -126,7 +156,14 @@
             </div>
           </div>
         </div>
-
+<include src="./views/ponente.html" locals='{
+          "imagen":"./assets/images/ponente7.webp",
+          "nombre": "Sara Aguado García",
+          "cargo":"Técnico de economía circular en Ihobe, Sociedad Pública de Gestión Ambiental del Gobierno Vasco.",
+          "ponencia":"Economía Circular y Medioambiental",
+          "fecha":"7 de noviembre 9:30 a 13:00",
+          "sala":"Sala 1"
+        }'></include> 
         <div class="ponente">
           <img
             src="./assets/images/ponente7.webp"
@@ -151,6 +188,14 @@
             </div>
           </div>
         </div>
+        <include src="./views/ponente.html" locals='{
+          "imagen":"./assets/images/ponente10.webp",
+          "nombre": "Daniel Osorio Diaz de Cerio",
+          "cargo":"Director General de Consumo del Ministerio de Derechos Sociales, Consumo y Agenda 2030. Gobierno de España",
+          "ponencia":"Economía Circular y Derecho",
+          "fecha":"7 de noviembre 9:30 a 13:00",
+          "sala":"Sala 3"
+        }'></include> 
 
         <div class="ponente">
           <img
