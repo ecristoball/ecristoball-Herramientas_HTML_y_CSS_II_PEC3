@@ -12,24 +12,10 @@
   <body class="p-0">
     <include src="./views/header.html"></include> 
 
-
     <main class="bg-beis-fondo text-verde-texto">
        
-     <!-- 
-      <nav aria-label="ubicacion breadcrumb ">
-        <ol class="ubicacion__listado breadcrumb fs-6 fs-md-4 mt-4">
-          <li class="ubicacion__listado-item breadcrumb-item">
-            <a href="./index.html">Home</a>
-          </li>
-          <li
-            class="ubicacion__listado-item breadcrumb-item active"
-            aria-current="page"
-          >
-            Ponentes
-          </li>
-        </ol>
-      </nav>
-    -->
+      <include src="./views/breadcrums.html" locals='{"pagina_actual":"Ponentes"}'></include>
+
       <h1 class="text-3xl md:text-6xl mx-auto py-8 mb-4 text-center font-medium">PONENTES</h1>
       <div class="flex flex-wrap gap-16 w-[90%] mx-auto py-8 my-4">
         <include src="./views/ponente.html" locals='{
@@ -40,26 +26,8 @@
           "fecha":"6 de noviembre 9:30 a 13:00",
           "sala":"Sala 3"
         }'></include> 
-        <div class="ponente ">
-          <img
-            src="./assets/images/ponente1.webp"
-            class="ponente__foto"
-            alt="foto de María González Mayor"
-          />
-          <div class="ponente__datos  ">
-            <h2 class="ponente__nombre">María González Mayor</h2>
-            <p class="leading-relaxed">
-              Directora General de Estrategia Digital en la Agencia Digital de
-              Andalucía. Junta de Andalucía.
-            </p> 
-            <p class="md:text-4xl my-4  md:my-8 font-bold">PONENCIA:</p>
-            <p class="lg:text-4xl md:my-8 ">Estrategia Digital en Economía Circular</p>
-            <p class="my-4">6 de noviembre 9:30 a 13:00</p>
-            <p class="md:text-4xl">Sala 3</p>
-          </div>
-          
-        </div>
-<include src="./views/ponente.html" locals='{
+             
+        <include src="./views/ponente.html" locals='{
           "imagen":"./assets/images/ponente2.webp",
           "nombre": "Mikel López Quintana",
           "cargo":" Analista de políticas en la Unidad de Gobernanza del Agua, Economía Azul y Circular, dentro de la División de Ciudades y Desarrollo Sostenible de la Organización para la Cooperación y el Desarrollo Económicos (OCDE).",
@@ -67,27 +35,8 @@
           "fecha":"6 de noviembre 9:30 a 13:00",
           "sala":"Sala 1"
         }'></include> 
-        <div class="ponente">
-          <img
-            src="./assets/images/ponente2.webp"
-            class="ponente__foto"
-            alt="foto de Mikel López Quintana"
-          />
-          <div class="ponente__datos">
-            <h2 class="ponente__nombre">Mikel López Quintana</h2>
-            <p class="leading-relaxed">
-              Analista de políticas en la Unidad de Gobernanza del Agua,
-              Economía Azul y Circular, dentro de la División de Ciudades y
-              Desarrollo Sostenible de la Organización para la Cooperación y el
-              Desarrollo Económicos (OCDE)
-            </p>
-            <p class="md:text-4xl my-4  md:my-8 font-bold">PONENCIA:</p>
-            <p class="lg:text-4xl md:my-8 ">Economia Azul y Circular</p>
-            <p class="my-4">6 de noviembre 9:30 a 13:00</p>
-            <p class="md:text-4xl">Sala 1</p>
-          </div>
-        </div>
-<include src="./views/ponente.html" locals='{
+
+        <include src="./views/ponente.html" locals='{
           "imagen":"./assets/images/ponente9.webp",
           "nombre": "Miguel Santana Almanzor",
           "cargo":"Responsable de Capital Natural y Economía Circular - Departamento de Territorio, Vivienda y Transición Ecológica - Generalitat denCatalunya.",
@@ -95,34 +44,8 @@
           "fecha":"6 de noviembre 15:00 a 17:00",
           "sala":"Sala 3"
         }'></include> 
-        <div class="ponente container-type inline-size">
-          <img
-            src="./assets/images/ponente9.webp"
-            class="ponente__foto"
-            alt="foto de Miguel Santana Almanzor"
-          />
-          <div class="ponente__datos">
-            <h2 class="ponente__nombre">Miguel Santana Almanzor</h2>
-            <p class="ponente__cargo">
-              Responsable de Capital Natural y Economía Circular - Departamento
-              de Territorio, Vivienda y Transición Ecológica - Generalitat de
-              Catalunya
-            </p>
-            <div class="ponente__ponencia">
-              <p class="ponente__ponencia-etiqueta">
-                <strong>PONENCIA:</strong>
-              </p>
-              <p class="ponente__ponencia-titulo">
-                Economía Circular en Vivienda
-              </p>
-              <p class="ponente__ponencia-fecha">
-                6 de noviembre 15:00 a 17:00
-              </p>
-              <p class="ponente__ponencia-sala">Sala 3</p>
-            </div>
-          </div>
-        </div>
-<include src="./views/ponente.html" locals='{
+     
+               <include src="./views/ponente.html" locals='{
           "imagen":"./assets/images/ponente6.webp",
           "nombre": "Jesús Martinez Del Castillo",
           "cargo":"Viceconsejero de Medio Ambiente del Departamento de Industria, Transición Energética y Sostenibilidad. Gobierno Vasco.",
@@ -130,33 +53,8 @@
           "fecha":"6 de noviembre 15:00 a 17:00",
           "sala":"Sala 1"
         }'></include> 
-        <div class="ponente">
-          <img
-            src="./assets/images/ponente6.webp"
-            class="ponente__foto"
-            alt="foto de Jesús Martinez Del Castillo"
-          />
-          <div class="ponente__datos">
-            <h2 class="ponente__nombre">Jesús Martinez Del Castillo</h2>
-            <p class="ponente__cargo">
-              Viceconsejero de Medio Ambiente del Departamento de Industria,
-              Transición Energética y Sostenibilidad. Gobierno Vasco
-            </p>
-            <div class="ponente__ponencia">
-              <p class="ponente__ponencia-etiqueta">
-                <strong>PONENCIA:</strong>
-              </p>
-              <p class="ponente__ponencia-titulo">
-                Economía Circular y Sostenibilidad
-              </p>
-              <p class="ponente__ponencia-fecha">
-                6 de noviembre 15:00 a 17:00
-              </p>
-              <p class="ponente__ponencia-sala">Sala 1</p>
-            </div>
-          </div>
-        </div>
-<include src="./views/ponente.html" locals='{
+                   
+        <include src="./views/ponente.html" locals='{
           "imagen":"./assets/images/ponente7.webp",
           "nombre": "Sara Aguado García",
           "cargo":"Técnico de economía circular en Ihobe, Sociedad Pública de Gestión Ambiental del Gobierno Vasco.",
@@ -164,30 +62,7 @@
           "fecha":"7 de noviembre 9:30 a 13:00",
           "sala":"Sala 1"
         }'></include> 
-        <div class="ponente">
-          <img
-            src="./assets/images/ponente7.webp"
-            class="ponente__foto"
-            alt="foto de Sara Aguado García"
-          />
-          <div class="ponente__datos">
-            <h2 class="ponente__nombre">Sara Aguado García</h2>
-            <p class="ponente__cargo">
-              Técnico de economía circular en Ihobe, Sociedad Pública de Gestión
-              Ambiental del Gobierno Vasco
-            </p>
-            <div class="ponente__ponencia">
-              <p class="ponente__ponencia-etiqueta">
-                <strong>PONENCIA:</strong>
-              </p>
-              <p class="ponente__ponencia-titulo">
-                Economía Circular y Medioambiental
-              </p>
-              <p class="ponente__ponencia-fecha">7 de noviembre 9:30 a 13:00</p>
-              <p class="ponente__ponencia-sala">Sala 1</p>
-            </div>
-          </div>
-        </div>
+
         <include src="./views/ponente.html" locals='{
           "imagen":"./assets/images/ponente10.webp",
           "nombre": "Daniel Osorio Diaz de Cerio",
@@ -197,32 +72,7 @@
           "sala":"Sala 3"
         }'></include> 
 
-        <div class="ponente">
-          <img
-            src="./assets/images/ponente10.webp"
-            class="ponente__foto"
-            alt="foto de Daniel Osorio Diaz de Cerio"
-          />
-          <div class="ponente__datos">
-            <h2 class="ponente__nombre">Daniel Osorio Diaz de Cerio</h2>
-            <p class="ponente__cargo">
-              Director General de Consumo del Ministerio de Derechos Sociales,
-              Consumo y Agenda 2030. Gobierno de España
-            </p>
-            <div class="ponente__ponencia">
-              <p class="ponente__ponencia-etiqueta">
-                <strong>PONENCIA:</strong>
-              </p>
-              <p class="ponente__ponencia-titulo">
-                Economía Circular y Derecho
-              </p>
-              <p class="ponente__ponencia-fecha">7 de noviembre 9:30 a 13:00</p>
-              <p class="ponente__ponencia-sala">Sala 3</p>
-            </div>
-          </div>
-        </div>
-      
-    </div>
+      </div>
     </main>
     <include src="./views/footer.html"></include>
 

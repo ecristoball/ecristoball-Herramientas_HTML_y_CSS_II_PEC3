@@ -1,9 +1,14 @@
-.input{
-    @apply w-full border-4  bg-input-bg-oklch mt-1 mb-8 rounded-md p-2 text-sm placeholder-verde-texto md:placeholder:text-lg focus:bg-beis-fondo ;
-}
-.etiqueta__campo{
-     @apply text-sm md:text-xl font-bold;
+
+.eltos__linea{
+     @apply flex flex-col md:flex-row md:gap-6;
 }
 .etiqueta__bloque{
      @apply text-2xl font-bold my-2;
 }
+.etiqueta__campo{
+     @apply text-sm md:text-xl font-bold;
+}
+.input{
+    @apply w-full border-4  bg-input-bg-oklch mt-1 mb-8 rounded-md p-2 text-sm placeholder-verde-texto md:placeholder:text-lg focus:bg-beis-fondo ;
+}
+

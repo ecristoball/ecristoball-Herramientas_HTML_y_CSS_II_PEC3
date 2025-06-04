@@ -9,28 +9,15 @@
     <!-- do not remove this line! -->
   </head>
 
-  <body class="p-0">
+  <body class="p-0 ">
     <include src="./views/header.html"></include>
 
     <main class="bg-beis-fondo text-verde-texto">
       <div class="w-[90%] md:w-[80%] mx-auto">
-        <nav aria-label="ubicacion breadcrumb ">
-          <ol class="">
-            <li class="ubicacion__listado-item breadcrumb-item">
-              <a href="./index.html">Home</a>
-            </li>
-            <li
-              class="ubicacion__listado-item breadcrumb-item active"
-              aria-current="page"
-            >
-              Inscripcion
-            </li>
-          </ol>
-        </nav>
-
-        <form name="inscripcion" method="POST" data-netlify="true" class="mx-auto my-4">
+        <include src="./views/breadcrums.html" locals='{"pagina_actual":"Inscripcion"}'></include>
+        <form name="inscripcion" method="POST" data-netlify="true" class="mx-auto ">
           <input type="hidden" name="form-name" value="inscripcion"/>
-          <section class="formulario__introduccion">
+          <section class="">
             <h1 class="text-2xl md:text-5xl my-4  md:my-8 font-bold">
               ¿Quieres participar en las jornadas sobre economía circular?
             </h1>
@@ -42,9 +29,8 @@
           </section>
 
           <h2 class="etiqueta__bloque">Datos personales</h2>
-          <section
-            class="formulario__datos-personales mb-4 border border-dark p-4">
-            <div class="flex flex-col md:flex-row md:gap-6">
+          <section class="mb-4 border border-dark p-4">
+            <div class="eltos__linea">
               <!-- nombre -->
               <div class="w-full md:w-2/5 flex flex-col" >
                 <label for="input-nombre" class="etiqueta__campo">Nombre</label>
@@ -81,7 +67,7 @@
                 pattern="^\d{8}[A-Za-z]$"
               />
             </div>
-            <div class="flex flex-col md:flex-row md:gap-6">
+            <div class="eltos__linea">
               <!-- email -->
               <div class="w-full md:w-1/2 flex flex-col">
                 <label for="input-mail" class="etiqueta__campo">Email address</label>
@@ -110,9 +96,8 @@
             </div>
           </section>
           <h2 class="etiqueta__bloque">Datos de empresa</h2>
-          <section
-            class="formulario__datos-empresa mb-4 mt-4 border border-dark p-4">
-            <div class="flex flex-col md:flex-row md:gap-6">
+          <section class="mb-4 mt-4 border border-dark p-4">
+            <div class="eltos__linea">
               <div class="w-full md:w-1/2 flex flex-col">
                 <label for="input-empresa" class="etiqueta__campo">Empresa</label>
                 <input
@@ -146,7 +131,7 @@
               </div>
             </div>
 
-            <div class="flex flex-col md:flex-row md:gap-6">
+            <div class="eltos__linea">
               <!-- ciudad -->
              <div class="w-full md:w-1/2 flex flex-col">
                 <label for="input-ciudad" class="etiqueta__campo"
@@ -191,7 +176,7 @@
                 />
               </div>
             </div>
-           <div class="w-full flex flex-col">
+           <div class="w-full">
               <label
                 for="input-descripcion"
                 class="etiqueta__campo"
@@ -207,118 +192,83 @@
             </div>
           </section>
           <h2 class="etiqueta__bloque"> Datos sobre las jornadas</h2>
-          <section
-            class="formulario__datos-jornadas border border-dark p-4 mb-4 mt-4 b"
-          >
-            <label for="input-modalidad" class="etiqueta__campo"
-              >Modalidad de asistencia</label
-            >
-            <select
-              class="input border-red-500"
-              id="input-modalidad"
-              name="modalidad"
-              required
-            >
-              <option value="" disabled selected>Por favor complete</option>
-              <option value="1">Presencial</option>
-              <option value="2">Telemática</option>
-            </select>
-
-            <div class="">
-              <h2 class="etiqueta__campo mb-4">
-                Indica las ponencias a las que deseas asistir. Revisa los
-                horarios para que las jornadas seleccionadas no coincidan.
-              </h2>
-              <div class="flex flex-col md:flex-row md:gap-6">
+          <section class="border border-dark p-4 mb-4 mt-4 b">
+            <div class="w-full">
+              <label for="input-modalidad" class="etiqueta__campo">Modalidad de asistencia</label>
+              <select
+                class="input border-red-500"
+                id="input-modalidad"
+                name="modalidad"
+                required
+              >
+                <option value="" disabled selected>Por favor complete</option>
+                <option value="1">Presencial</option>
+                <option value="2">Telemática</option>
+              </select>
+            </div>  
+         
+            <label for="input-asistencia" class="etiqueta__campo">Indica las ponencias a las que deseas asistir. Revisa los
+            horarios para que las jornadas seleccionadas no coincidan.</label>
+            <div class="flex flex-col md:flex-row md:gap-6 my-4">
               <div class="w-full md:w-1/2 flex flex-col">
-              <div class="">
-                <div class="form-check form-check-inline">
+                <div class="mb-2 md:text-lg">
                   <input
-                    class="form-check-input"
                     type="checkbox"
                     id="inlineCheckbox1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox1"
-                    >Estrategia Digital en Economía Circular</label
-                  >
+                    value="option1"/>
+                  <label  for="inlineCheckbox1"
+                    >Estrategia Digital en Economía Circular</label>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 mb-3">
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
+                <div class="mb-2 md:text-lg">
+                  <input 
                     type="checkbox"
                     id="inlineCheckbox2"
                     value="option2"
                   />
-                  <label class="form-check-label" for="inlineCheckbox2"
-                    >Economia Azul y Circular</label
-                  >
+                  <label for="inlineCheckbox2"
+                    >Economia Azul y Circular</label>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 mb-3">
-                <div class="form-check form-check-inline">
+                <div class="mb-2 md:text-lg">
                   <input
-                    class="form-check-input"
                     type="checkbox"
                     id="inlineCheckbox3"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox3"
-                    >Economía Circular en Vivienda</label
-                  >
+                    value="option1"/>
+                  <label for="inlineCheckbox3"
+                    >Economía Circular en Vivienda</label>
                 </div>
-              </div>
               </div>
               <div class="w-full md:w-1/2 flex flex-col">
-              <div class="col-12 col-md-6 mb-3">
-                <div class="form-check form-check-inline">
+                <div class="mb-2 md:text-lg">
                   <input
-                    class="form-check-input"
                     type="checkbox"
                     id="inlineCheckbox4"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox4"
-                    >Economía Circular y Sostenibilidad</label
-                  >
+                    value="option2"/>
+                  <label for="inlineCheckbox4"
+                    >Economía Circular y Sostenibilidad</label>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 mb-3">
-                <div class="form-check form-check-inline">
+                <div class="mb-2 md:text-lg">
                   <input
-                    class="form-check-input"
                     type="checkbox"
                     id="inlineCheckbox5"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox5"
-                    >Economía Circular y Medioambiental</label
-                  >
+                    value="option1"/>
+                  <label  for="inlineCheckbox5"
+                    >Economía Circular y Medioambiental</label>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 mb-3">
-                <div class="form-check form-check-inline">
+
+                <div class="mb-2 md:text-lg">
                   <input
-                    class="form-check-input"
                     type="checkbox"
                     id="inlineCheckbox6"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox6"
-                    >Economía Circular y Derecho</label
-                  >
+                    value="option2"/>
+                  <label for="inlineCheckbox6"
+                    >Economía Circular y Derecho</label>
                 </div>
-              </div>
-              </div>
+              
               </div>
             </div>
-            <div class="mb-3">
-              <h2
-              
-                class="text-xlm md:text-3xl font-bold"
-              >
+            
+            <div class="mt-6">
+              <h2 class="text-xlm md:text-3xl font-bold">
                 ¿Asistirás presencialmente al evento de bienvenida?
               </h2>
               <br />
@@ -327,8 +277,8 @@
                 <legend class="etiqueta__campo">
                   ¿Asistirás al evento de bienvenida?
                 </legend>
-
-                <div class="form-check form-check-inline">
+              <div class="flex flex-row gap-6">
+                <div >
                   <input
                     class="w-3 h-3 appearance-none rounded-full border-2 border-red-500 checked:border-verde-texto checked:bg-verde-texto focus:ring-2 focus:ring-verde-texto"
                     type="radio"
@@ -337,19 +287,18 @@
                     value="si"
                     required
                   />
-                  <label class="" for="asistenciaSi">Sí</label>
+                  <label for="asistenciaSi">Sí</label>
                 </div>
-
-                <div class="form-check form-check-inline">
+                <div >
                   <input
                     class="w-3 h-3 appearance-none rounded-full border-2 border-red-500 checked:border-verde-texto checked:bg-verde-texto focus:ring-2 focus:ring-verde-texto"
                     type="radio"
                     name="asistenciaBienvenida"
                     id="asistenciaNo"
                     value="no"
-                    required
-                  />
-                  <label class="form-check-label" for="asistenciaNo">No</label>
+                    required/>
+                  <label for="asistenciaNo">No</label>
+                </div>
                 </div>
               </fieldset>
             </div>
@@ -381,9 +330,11 @@
               >Acepto recibir información comercial</label
             >
           </div>
+          <div class="py-8">
+            <include src="./views/boton.html"  locals='{"texto":"Enviar"}'></include> 
+          </div>
 
-          <include src="./views/boton.html"  locals='{
-          "texto":"Enviar"}'></include> 
+          
         </form>
       </div>
     </main>
