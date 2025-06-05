@@ -8,7 +8,7 @@
 .etiqueta__campo{
      @apply text-sm md:text-xl font-bold;
 }
-.input{
+.form_input{
     @apply w-full border-4  bg-input-bg-oklch mt-1 mb-8 rounded-md p-2 text-sm placeholder-verde-texto md:placeholder:text-lg focus:bg-beis-fondo ;
 }
 
